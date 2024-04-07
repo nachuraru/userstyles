@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           [SNK] tumblr
+@namespace      snake (terrybogard.gay)
+@version        2.1
+@preprocessor   stylus
+
+@var checkbox borders "hide borders" 1
+@var checkbox tabs "hide dashboard tabs" 1
+@var checkbox experimental "[experimental] center blog popups" 0
+==/UserStyle== */
+@-moz-document domain("www.tumblr.com") {
+
+/* ADJUSTMENTS ### */
+
+/* remove column borders */
+if borders { .FA5JM, .gPQR5.FGfuE .lSyOz, .gPQR5.FGfuE .lSyOz, .p4DiZ { border-color:transparent!important; } }
+/* removes border + padding around notecount */
+.vE6sH, .rlv6m .ePsyd { padding:0!important; border:0!important; background:transparent!important; }
+
+/* REMOVAL ### */
+
+/* left sidebar */
+[href*="/explore"] /* explore */
+[href*="/live"], /* live */
+.visx-linepath, /* activity graph */
+/* account v */
+#account_subnav > li.g8SYn.IYrO9 > .tDT48 > .a132D > .jF6A2, /* extra number counts on like / follower link */
+[href*="/changes"], /* what's new */
+[href*="/help"], /* help */
+[href*="/post-plus"], /* post+ */
+[href*="/blaze"], /* blaze */
+/* settings v */
+[href*="/settings/subscriptions"], /* post+ subscriptions */
+/* --------- */
+[aria-label="TumblrMart"], /* tumblr mart */
+[href*="/domains"], /* get a domain */
+[href*="/settings/purchases"], /* payments */
+[href*="/settings/ad-free-browsing"], /* go ad-free */
+/* RIGHT SIDEBAR ### */
+.UAFPe._qHCt.m8mN_, /* footer */
+/* DASHBOARD ### */
+.HphhS, /* check these out header */
+.kDCXR.q1ZAL, /* check these out carousel */
+/* POSTS ### */
+[aria-label="Blaze"] /* blaze button */
+{ display:none!important; }
+
+if tabs { .X4W3M.Dk06o { display:none!important; } }
+
+/* experimental - centered blog popups */ if experimental {
+.vM8CJ { display:none!important; }
+.raBdW { max-width:600px; }
+.pKQCB { max-width:600px; }
+@media (min-width: 990px) { .RkANE.r1Zq6 { width:600px; } }
+}
+
+}
