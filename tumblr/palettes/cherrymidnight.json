@@ -1,0 +1,19 @@
+{
+  "palette:cherryMidnight:1708126702298": {
+    "name": "cherry midnight",
+    "black": "234,234,234",
+    "white": "33,35,41",
+    "white-on-dark": "234,234,234",
+    "navy": "16,16,23",
+    "red": "172,92,92",
+    "orange": "191,105,64",
+    "yellow": "195,172,74",
+    "green": "38,162,105",
+    "blue": "61,136,159",
+    "purple": "192,97,203",
+    "pink": "230,78,129",
+    "accent": "230,78,129",
+    "secondary-accent": "40,42,50",
+    "follow": "230,78,129"
+  }
+}
